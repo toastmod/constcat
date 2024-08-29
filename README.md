@@ -8,8 +8,7 @@ const name: &str = "MyName🐱";
 const postfix: &str = "_type";
 const totally_safe_name_trust_me_im_a_cat: &'static str = constcat!(name, postfix); 
 
-#[test]
-fn it_works() {
+fn main() {
   println!("Hello, world! Looks like my cat's name is {}", totally_safe_name_trust_me_im_a_cat);
 }
 ```
